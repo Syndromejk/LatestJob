@@ -231,45 +231,7 @@ border: none;
   /* Neutral Darker */
   border: 1px solid #AEAEAA;
 }
-
-/* Arrow Down Button */
-.arrow-down-button {
-  width: 30%;
-  height: 36px; /* Adjust as needed */
-  padding: 8px;
-  font-family: Avenir;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  text-align: left;
-  color: #1F353D;
-  border: none;
-  background: #FFFFFF url('arrow-down-icon.png') no-repeat right center; /* Replace 'arrow-down-icon.png' with your arrow-down icon path */
-  background-size: 20px; /* Adjust as needed */
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  cursor: pointer;
-}
-
-/* Hide the default dropdown arrow */
-.arrow-down-button::-ms-expand {
-  display: none;
-}
-
-/* Style the custom arrow */
-.arrow-down-button::after {
-  content: ''; /* Empty content */
-  display: inline-block;
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 5px solid #1F353D; /* Adjust color */
-  vertical-align: middle;
-  margin-left: 8px; /* Adjust spacing */
-}
-
+ 
 .form-input-3-lines-no-icon {
   /* Auto layout */
   display: flex;
@@ -308,12 +270,19 @@ border: none;
   padding: 15px; /* Adjust padding as needed */
   cursor: pointer;
   margin-top: 4%;
-  margin-right: 20%;
+  margin-right: 20vh;
 }
 
 #buttonContent {
   color: #fff; /* Text color */
   font-size: 18px; /* Adjust font size as needed */
+  font-family: Montserrat sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0px;
+  text-align: center;
+
 }
 
 /* **************************************************************************************** */
@@ -346,14 +315,51 @@ border: none;
   color: #F95157;
 }
 
+/* **************************************************************************************** */
+.job-posting {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 953px;
+height:  250px;
+gap: 16px;
+margin-left: 45%;
+margin-top: 9vh;
+
+}
+
+.job-posting h2 {
+  margin-top: 0;
+}
+
+.job-posting p {
+  margin-bottom: 10px;
+}
+
+.job-posting .buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.job-posting button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.job-posting .unsave {
+  background-color: #ddd;
+  color: #333;
+}
+
+
+
 
 /* **************************************************************************************** */
-
-
-/* **************************************************************************************** */
-
-
- /* Salary filter */
+  /* Salary filter */
  .salary-filter {
   position: absolute;
   width: 121px;
@@ -381,7 +387,7 @@ border: none;
   height: 40px;
   left: 833px;
   top: 323px;
-  margin-top: 0.5%;
+  margin-top: 0%;
   margin-left: 5%;
 
   /* Neutral */
@@ -443,21 +449,129 @@ border: none;
 
 
  /* ***********************************************************************************  */
+ #GoButton {
+  width: 267px;
+  height: 52px;
+  padding: 10px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #548BAB;
+  gap: 10px;
+  cursor: pointer;
+  margin-top: 1.5%;
+  margin-left: 5%;
+}
 
+#GoButtonn {
+  font-size: 16px;
+  color: #FFFFFF;
+  font-family: Montserrat sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: center;
 
-
+}
 
 
 
 /* ************************************************************************************* */
 
-
-
-
-
-
+ /* Salary filter */
+ .Classifications-filter {
+  position: absolute;
+  width: 121px;
+  height: 30px;
+  left: 6.5%;
+  top: 90%;
+  font-family: Montserrat sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150px;
+  color: #548BAB;
+  margin-top: 1%;
+}
 
 /* ************************************************************************************* */
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  width: 245px;
+  height: 104px;
+  margin-top: 6%;
+  margin-left: 6.5%;
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 8px;
+  height: 24px;
+  cursor: pointer;
+}
+
+
+.checkbox-box {
+  box-sizing: border-box;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+}
+
+
+.checked .checkbox-box {
+  background: #548BAB;
+}
+
+
+.checkbox-label {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000000;
+}
+
+
+.hidden {
+  display: none;
+}
+
+/****************************************************************************************/
+
+ /* Salary filter */
+ .Title-filter {
+  position: absolute;
+  width: 121px;
+  height: 30px;
+  left: 6.5%;
+  top: 113%;
+  font-family: Montserrat sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: #548BAB;
+}
+/* **************************************************************************************** */
+/* **************************************************************************************** */
+/* **************************************************************************************** */
+/* **************************************************************************************** */
+/* **************************************************************************************** */
+
+
+
+
 
 
 
@@ -466,6 +580,57 @@ border: none;
 /****************************************************************************************/
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************************************************************************/
 .footer {
   background-color: #FFFFFF;
   padding: 20px;

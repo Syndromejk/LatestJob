@@ -61,6 +61,10 @@
 
 <!-- ****************************************************************************************************  -->
 
+
+
+
+
 <div class="text-header-block">
   <div class="section-heading">Latest Jobs</div>
   <div class="section-subheading">Check out the latest opportunities available through Gleeson Recruitment.</div>
@@ -72,33 +76,31 @@
 
 <div class="form-input-1-lines-no-icon">
   <label for="keyword1" class="keyword1">KEYWORDS</label>
-<input type="text" id="keyword1" name="keyword1" placeholder="Enter keyword" class="keyword2" required>
+  <input type="text" id="keyword1" name="keyword1" placeholder="Enter keyword" class="keyword2" required>
 </div>
 
 <!-- ****************************************************************************************************  -->
 <div class="form-input-2-lines-no-icon">
-  <label for="keyword1" class="keyword1">CLASSIFICATIONS:</label>
-  <input type="text" id="keyword1" name="keyword1" placeholder="All Classifications" class="keyword2" required>
-
-  <!-- Dropdown Button -->
-  <select class="dropdown-button">
-    <option value="option1"></option>
-    <option value="option2"></option>
+  <label for="classification" class="keyword1">CLASSIFICATIONS</label>
+  <select class="dropdown-button" id="classification">
+    <option value="" disabled selected>All Classifications</option>
+    <option value="option1">Option 1</option>
+    <option value="option2">Option 2</option>
     <!-- Add more options as needed -->
   </select>
 </div>
 
+
+  
 
 <div class="form-input-3-lines-no-icon">
-  <label for="keyword1" class="keyword1">LOCATION</label>
-  <input type="text" id="keyword1" name="keyword1" placeholder="All Locations" class="keyword2" required>
-
-  <select class="dropdown-button">
-    <option value="option1"></option>
-    <option value="option2"></option>
+  <label for="location" class="keyword1">LOCATION</label>
+  <select class="dropdown-button" id="location">
+    <option value="" disabled selected>All Locations</option>
+    <option value="option1">Option 1</option>
+    <option value="option2">Option 2</option>
     <!-- Add more options as needed -->
   </select>
-</div>
 </div>
 
 
@@ -106,20 +108,51 @@
   <div id="buttonContent">Search</div>
 </div>
 
+
+
+
+
+
+
+
+
 <div class="pill-button">
-  <button class="buttonss">Marketing X</button> 
-<button class="buttonss">Marketing X</button>
-<button class="buttonss">Marketing X</button>
-<button class="clear">Clear all </button>
+  <button class="buttonss">Marketing X</button>
+  <button class="buttonss">Marketing X</button>
+  <button class="buttonss">Marketing X</button>
+  <button class="clear">Clear all</button>
 </div>
+
+
+
+<div class="job-posting">
+  <h2>Project Manager</h2>
+  <p><strong>National Australia Bank</strong></p>
+  <p>Western Suburbs</p>
+  <p>$60,000 - $79,999</p>
+  <p>Managerial > Specialist</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget suspendisse eget lectus condimentum sit fermentum aenean pulvinar cras.</p>
+  <p>Posted on 24th Sept 2021</p>
+  <div class="buttons">
+      <button class="unsave">Unsave</button>
+      <button class="email">Email</button>
+  </div>
+</div>
+
+
+
+
+
+
 
 <!-- ****************************************************************************************************  -->\
 
 
-<!-- ****************************************************************************************************  -->
+
 
 <div class="salary-filter">Salary Filter</div>
- 
+
+
 <!-- ****************************************************************************************************  -->
 
 <div class="form-input-4-lines-no-icon">
@@ -137,14 +170,180 @@
   </div>
 
 <!-- ****************************************************************************************************  -->
+<div id="GoButton">
+  <div id="GoButtonn">Go</div>
+</div>
+
+<!-- ************************************************************************************************************************* -->
+
+<div class="Classifications-filter">Classification</div>
+
+<!-- ************************************************************************************************************************* -->
+<!-- Your content goes here -->
+<div class="checkbox-group">
+  <div class="checkbox" onclick="toggleCheckbox(this)">
+    <div class="checkbox-box" style="border: 1px solid #AEAEAA;"></div>
+    <div class="checkbox-label">Consultant/Funct. Consultant</div>
+  </div>
+
+  <div class="checkbox" onclick="toggleCheckbox(this)">
+    <div class="checkbox-box" style="border: 1px solid #AEAEAA;"></div>
+    <div class="checkbox-label">Analyst/Programmer</div>
+  </div>
+
+  
+  <div class="checkbox" onclick="toggleCheckbox(this)">
+    <div class="checkbox-box" style="border: 1px solid #AEAEAA;"></div>
+    <div class="checkbox-label">Business Analyst</div>
+  </div>
+</div>
+
+<script>
+  function toggleCheckbox(checkbox) {
+    var checkboxes = document.querySelectorAll('.checkbox');
+    
+    checkboxes.forEach(function (cb) {
+      if (cb !== checkbox) {
+        var otherCheckboxBox = cb.querySelector('.checkbox-box');
+        otherCheckboxBox.classList.remove('checked');
+        otherCheckboxBox.innerHTML = ''; // Remove the checkmark
+      }
+    });
+
+    var checkboxBox = checkbox.querySelector('.checkbox-box');
+    checkboxBox.classList.toggle('checked');
+
+    // Add or remove the checkmark
+    if (checkboxBox.classList.contains('checked')) {
+      checkboxBox.innerHTML = '&#10003;'; // Checkmark symbol
+    } else {
+      checkboxBox.innerHTML = ''; // Remove the checkmark
+    }
+  }
+</script>
+
+<!-- ************************************************************************************************************************* -->
+
+<div class="Title-filter">Title</div>
+
+<!-- ************************************************************************************************************************* --
+
+<!-- Your content goes here -->
+<div class="checkbox-group">
+  <div class="checkbox" onclick="toggleCheckbox(this)">
+    <div class="checkbox-box" style="border: 1px solid #AEAEAA;"></div>
+    <div class="checkbox-label">Consultant/Funct. Consultant</div>
+  </div>
+
+  <div class="checkbox" onclick="toggleCheckbox(this)">
+    <div class="checkbox-box" style="border: 1px solid #AEAEAA;"></div>
+    <div class="checkbox-label">Analyst/Programmer</div>
+  </div>
+
+  
+  <div class="checkbox" onclick="toggleCheckbox(this)">
+    <div class="checkbox-box" style="border: 1px solid #AEAEAA;"></div>
+    <div class="checkbox-label">Business Analyst</div>
+  </div>
+</div>
+
+<script>
+  function toggleCheckbox(checkbox) {
+    var checkboxes = document.querySelectorAll('.checkbox');
+    
+    checkboxes.forEach(function (cb) {
+      if (cb !== checkbox) {
+        var otherCheckboxBox = cb.querySelector('.checkbox-box');
+        var otherCheckboxLabel = cb.querySelector('.checkbox-label');
+
+        otherCheckboxBox.classList.remove('checked');
+        otherCheckboxBox.innerHTML = ''; // Remove the checkmark
+        otherCheckboxLabel.classList.remove('checked-label'); // Remove any additional styling for checked label
+      }
+    });
+
+    var checkboxBox = checkbox.querySelector('.checkbox-box');
+    var checkboxLabel = checkbox.querySelector('.checkbox-label');
+
+    checkboxBox.classList.toggle('checked');
+
+    // Add or remove the checkmark and additional styling for checked label
+    if (checkboxBox.classList.contains('checked')) {
+      checkboxBox.innerHTML = '&#10003;'; // Checkmark symbol
+      checkboxLabel.classList.add('checked-label'); // Add additional styling for checked label
+    } else {
+      checkboxBox.innerHTML = ''; // Remove the checkmark
+      checkboxLabel.classList.remove('checked-label'); // Remove any additional styling for checked label
+    }
+  }
+</script>
+
+
+<!-- ****************************************************************************************************  -->
+
+
+
+<!-- ****************************************************************************************************  -->
+<!-- ****************************************************************************************************  -->
+<!-- ****************************************************************************************************  -->
+<!-- ****************************************************************************************************  -->
+
+
+<!-- ************************************************************************************************************************* -->
+
+ 
+  
+
+
+
+
+
+
 
 
 <!-- ************************************************************************************************************************* -->
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- ************************************************************************************************************************* -->
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ************************************************************************************************************************* -->
+
+
+
+
+
+
+
+
+
+<!-- ************************************************************************************************************************* -->
 
   <div class="footer">
     <div class="footer-logo">
