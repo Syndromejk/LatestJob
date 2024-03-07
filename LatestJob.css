@@ -105,6 +105,7 @@ nav a:hover,
   cursor: pointer;
   width: 150px;
   height: 47px;
+  font-family: Montserrat sans-serif;
 }
 
 
@@ -123,6 +124,7 @@ nav a:hover,
   margin-right: 10px;
   width: 160px;
   height: 47px;
+  font-family: Montserrat sans-serif;
 }
 
 .dropdown{
@@ -270,7 +272,7 @@ border: none;
   padding: 15px; /* Adjust padding as needed */
   cursor: pointer;
   margin-top: 8vh;
-  margin-right: 20vh;
+  margin-right: 40vh;
 }
 
 #buttonContent {
@@ -362,7 +364,7 @@ border: none;
   color: #548BAB; /* Set text color to #548BAB */
   border: 1px solid #548BAB;
   background-color: transparent;
-  font-family: Inter;
+  font-family: Inter sans-serif;
 font-size: 16px;
 font-weight: 400;
 line-height: 20px;
@@ -371,23 +373,30 @@ text-align: center;
 
 }
 
-.savesort2 {
-  width: 140px;
-  height: 42px;
-  padding: 10px;
-  border-radius: 100px;
-  border: 1px solid #548BAB;
-  gap: 10px;
-  color: #548BAB; /* Set text color to #548BAB */
-  background-color: transparent;
-  font-family: Inter;
-font-size: 16px;
-font-weight: 400;
-line-height: 20px;
-letter-spacing: 0em;
-text-align: center;
+ /* Adjusted styling to remove underline */
+  .savesort2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px; /* Adjusted width */
+    height: 42px;
+    padding: -0px;
+    border-radius: 100px;
+    border: 1px solid #548BAB;
+    gap: 10px;
+    color: #548BAB;
+    background-color: transparent;
+    font-family: Inter sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-decoration: none;
+    margin-top: -4.5vh;
+    margin-left: 17.5vh;
+  }
 
-}
 
 /* **************************************************************************************** */
 
@@ -455,44 +464,61 @@ color: #8F8F8F;
   width: Hug (128px);
   height: Hug (92px);
   gap: 8px;
-  margin-left: 170vh;
-  margin-top: -20vh;
+  margin-left: 175vh;
+  margin-top: -23vh;
+}
+.unsave {
+  width: 128px;
+  height: 42px;
+  padding: 10px;
+  border-radius: 100px;
+  border: 1px solid #548BAB;
+  gap: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-family: Inter sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  border-color: #548BAB;
+  background-color: transparent;
+  color: #548BAB;
 }
 
-.unsave{
-  width: Hug (101px);
-height: Hug (44px);
-top: -1px;
-left: 13px;
-padding: 10px;
-gap: 10px;
-font-family: Inter;
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0px;
-text-align: center;
-
+.unsave i.fa-heart {
+  color: #F65164;
+  margin-right: 5px;
 }
 
-
-
-.email{
-width: Hug (104px);
-height: Hug (44px);
-top: -1px;
-left: 11.5px;
-padding: 10px;
-gap: 10px;
-font-family: Inter;
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0px;
-text-align: center;
-
-
+.email {
+  width: 128px;
+  height: 42px;
+  top: -1px;
+  left: 11.5px;
+  padding: 10px;
+  gap: 10px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  border: 1px solid #548BAB;
+  border-radius: 100px;
+  background-color: transparent;
+  color: #548BAB;
+  font-family: Inter sans-serif;
+  margin-top: 10px; /* Add margin-top to create space between elements */
 }
+
+.email i.fa-envelope {
+  color: #080E49;
+}
+
 .lorem{
 font-family: Inter;
 font-size: 16px;
@@ -516,20 +542,20 @@ width: 177px;
 height: 21px;
 color: #8F8F8F;
 margin-top: -16vh;
-margin-left: 60vh;
+margin-left: 68vh;
 
 }
 
 /* bottom bar */
 .bottom-bar {
   position: absolute;
-  width: 810px;
+  width: 850px;
   height: 40px;
   left: 0px;
   top: 198px;
   background: rgba(201, 223, 238, 0.2);
   margin-left: 102vh;
-  margin-top: 70.5vh;
+  margin-top: 68.5vh;
 }
 
 /* Managerial > Specialist */
@@ -546,7 +572,7 @@ margin-left: 60vh;
   line-height: 18px;
   color: #8F8F8F;
   margin-left: 101vh;
-  margin-top: 91vh;
+  margin-top: 89vh;
 }
 
 /* Line 10 */
@@ -626,44 +652,63 @@ margin-left: 60vh;
   width: Hug (128px);
   height: Hug (92px);
   gap: 8px;
-  margin-left: 170vh;
-  margin-top: -20vh;
+  margin-left: 175vh;
+  margin-top: -23vh;
 }
 
-.unsave1{
-  width: Hug (101px);
-height: Hug (44px);
-top: -1px;
-left: 13px;
-padding: 10px;
-gap: 10px;
-font-family: Inter;
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0px;
-text-align: center;
+.unsave1 {
+  width: 128px;
+  height: 42px;
+  padding: 10px;
+  border-radius: 100px;
+  border: 1px solid #548BAB;
+  gap: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-family: Inter sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  border-color: #548BAB;
+  background-color: transparent;
+  color: #548BAB;
+}
 
+.unsave1 i.fa-heart {
+  color: #F65164;
+  margin-right: 5px;
+}
+
+.email1 {
+  width: 128px;
+  height: 42px;
+  top: -1px;
+  left: 11.5px;
+  padding: 10px;
+  gap: 10px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  border: 1px solid #548BAB;
+  border-radius: 100px;
+  background-color: transparent;
+  color: #548BAB;
+  font-family: Inter sans-serif;
+  margin-top: 10px; /* Add margin-top to create space between elements */
+}
+
+.email1 i.fa-envelope {
+  color: #080E49;
 }
 
 
-
-.email1{
-width: Hug (104px);
-height: Hug (44px);
-top: -1px;
-left: 11.5px;
-padding: 10px;
-gap: 10px;
-font-family: Inter;
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0px;
-text-align: center;
-
-
-}
 .lorem1{
 font-family: Inter;
 font-size: 16px;
@@ -687,20 +732,20 @@ width: 177px;
 height: 21px;
 color: #8F8F8F;
 margin-top: -16vh;
-margin-left: 60vh;
+margin-left: 68vh;  
 
 }
 
 /* bottom bar */
 .bottom-bar1 {
   position: absolute;
-  width: 810px;
+  width: 850px;
   height: 40px;
   left: 0px;
   top: 198px;
   background: rgba(201, 223, 238, 0.2);
   margin-left: 102vh;
-  margin-top: 105.5vh;
+  margin-top: 107.5vh;
 }
 
 /* Managerial > Specialist */
@@ -717,7 +762,7 @@ margin-left: 60vh;
   line-height: 18px;
   color: #8F8F8F;
   margin-left: 101vh;
-  margin-top: 126vh;
+  margin-top: 128vh;
 }
 
 /* Line 10 */
@@ -795,43 +840,63 @@ margin-left: 60vh;
   width: Hug (128px);
   height: Hug (92px);
   gap: 8px;
-  margin-left: 170vh;
-  margin-top: -20vh;
+  margin-left: 175vh;
+  margin-top: -23vh;
 }
 
-.unsave2{
-  width: Hug (101px);
-height: Hug (44px);
-top: -1px;
-left: 13px;
-padding: 10px;
-gap: 10px;
-font-family: Inter;
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0px;
-text-align: center;
+.unsave2 {
+  width: 128px;
+  height: 42px;
+  padding: 10px;
+  border-radius: 100px;
+  border: 1px solid #548BAB;
+  gap: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-family: Inter sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  border-color: #548BAB;
+  background-color: transparent;
+  color: #548BAB;
+}
 
+.unsave2 i.fa-heart {
+  color: #F65164;
+  margin-right: 5px;
+}
+
+.email2 {
+  width: 128px;
+  height: 42px;
+  top: -1px;
+  left: 11.5px;
+  padding: 10px;
+  gap: 10px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  border: 1px solid #548BAB;
+  border-radius: 100px;
+  background-color: transparent;
+  color: #548BAB;
+  font-family: Inter sans-serif;
+  margin-top: 10px; /* Add margin-top to create space between elements */
+}
+
+.email2 i.fa-envelope {
+  color: #080E49;
 }
 
 
-.email2{
-width: Hug (104px);
-height: Hug (44px);
-top: -1px;
-left: 11.5px;
-padding: 10px;
-gap: 10px;
-font-family: Inter;
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0px;
-text-align: center;
-
-
-}
 .lorem2{
 font-family: Inter;
 font-size: 16px;
@@ -855,20 +920,20 @@ width: 177px;
 height: 21px;
 color: #8F8F8F;
 margin-top: -16vh;
-margin-left: 60vh;
+margin-left: 68vh;
 
 }
 
 /* bottom bar */
 .bottom-bar2 {
   position: absolute;
-  width: 810px;
+  width: 850px;
   height: 40px;
   left: 0px;
   top: 198px;
   background: rgba(201, 223, 238, 0.2);
   margin-left: 102vh;
-  margin-top: 142.5vh;
+  margin-top: 145.5vh;
 }
 
 /* Managerial > Specialist */
@@ -885,7 +950,7 @@ margin-left: 60vh;
   line-height: 18px;
   color: #8F8F8F;
   margin-left: 101vh;
-  margin-top: 163vh;
+  margin-top: 166vh;
 }
 
 /* Line 10 */
@@ -965,44 +1030,62 @@ margin-left: 60vh;
   width: Hug (128px);
   height: Hug (92px);
   gap: 8px;
-  margin-left: 170vh;
-  margin-top: -20vh;
+  margin-left: 175vh;
+  margin-top: -23vh;
 }
 
-.unsave3{
-  width: Hug (101px);
-height: Hug (44px);
-top: -1px;
-left: 13px;
-padding: 10px;
-gap: 10px;
-font-family: Inter;
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0px;
-text-align: center;
-
+.unsave3 {
+  width: 128px;
+  height: 42px;
+  padding: 10px;
+  border-radius: 100px;
+  border: 1px solid #548BAB;
+  gap: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-family: Inter sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  border-color: #548BAB;
+  background-color: transparent;
+  color: #548BAB;
 }
 
-
-
-.email3{
-width: Hug (104px);
-height: Hug (44px);
-top: -1px;
-left: 11.5px;
-padding: 10px;
-gap: 10px;
-font-family: Inter;
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0px;
-text-align: center;
-
-
+.unsave3 i.fa-heart {
+  color: #F65164;
+  margin-right: 5px;
 }
+
+.email3 {
+  width: 128px;
+  height: 42px;
+  top: -1px;
+  left: 11.5px;
+  padding: 10px;
+  gap: 10px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  border: 1px solid #548BAB;
+  border-radius: 100px;
+  background-color: transparent;
+  color: #548BAB;
+  font-family: Inter sans-serif;
+  margin-top: 10px; /* Add margin-top to create space between elements */
+}
+
+.email3 i.fa-envelope {
+  color: #080E49;
+}
+
 .lorem3{
 font-family: Inter;
 font-size: 16px;
@@ -1026,20 +1109,20 @@ width: 177px;
 height: 21px;
 color: #8F8F8F;
 margin-top: -16vh;
-margin-left: 60vh;
+margin-left: 68vh;
 
 }
 
 /* bottom bar */
 .bottom-bar3 {
   position: absolute;
-  width: 810px;
+  width: 850px;
   height: 40px;
   left: 0px;
   top: 198px;
   background: rgba(201, 223, 238, 0.2);
   margin-left: 102vh;
-  margin-top: 179.5vh;
+  margin-top: 183.5vh;
 }
 
 /* Managerial > Specialist */
@@ -1056,7 +1139,7 @@ margin-left: 60vh;
   line-height: 18px;
   color: #8F8F8F;
   margin-left: 101vh;
-  margin-top: 200vh;
+  margin-top: 204vh;
 }
 
 /* Line 10 */
@@ -1082,7 +1165,7 @@ margin-left: 60vh;
   width: 352px;
   height: 32px;
   margin-left: 102vh;
-  margin-top: 17vh;
+  margin-top: 15vh;
 }
 
 /* Paginator Frame */
@@ -1164,8 +1247,8 @@ margin-left: 60vh;
   height: 40px;
   left: 833px;
   top: 323px;
-  margin-top: -150vh;
-  margin-left: 4%;
+  margin-top: -157vh;
+  margin-left: 4%;  
 
 
 }
@@ -1185,33 +1268,69 @@ margin-left: 60vh;
   
 /* ***********************************************************************************  */
 
-.input-container {
-  width: 165px; /* Adjust as needed */
-  height: 52px;
-  top: 132px;
-  left: 16px;
-  grid-template-columns: 1fr auto 1fr; /* Adjust column widths as needed */
-  align-items: center;
-display: inline-block;
-margin-left: 4vh;
+.input-container1{
+  width: 90px;
+  height: 40px;
+  display: grid; /* Change to grid */
+  grid-template-columns: 1fr;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 32px 8px;
+  margin-left: 9.5vh;
+  border-radius: 8px;
+  margin-top: -1vh;
+}
+.input-container2 {
+  width: 90px;
+  height: 40px;
+  display: grid; /* Change to grid */
+  grid-template-columns: 1fr;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 32px 8px;
+  margin-left: 4%;
+  border-radius: 8px;
+  margin-left: 22.5vh;
+  margin-top: -8vh;
 }
 
-.input-container input,
-.input-container span {
-  height: 60%;
-  padding: 8px; /* Adjust padding as needed */
- border-radius: 10px;
- width: 155px;
+.input-container1 input{
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
+.input-container2 input {
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+/* Additional styling for the input values */
+#firstInput,
+#secondInput {
+  width: calc(100% - 16px);
+  height: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
 
 /* You can add more styling as needed */
 
 
  /* ***********************************************************************************  */
  #GoButton {
-  width: 267px;
-  height: 52px;
+  width: 200px;
+  height: 40px;
   padding: 10px;
   border-radius: 100px;
   display: flex;
@@ -1221,7 +1340,7 @@ margin-left: 4vh;
   gap: 10px;
   cursor: pointer;
   margin-top: 1.5%;
-  margin-left: 5%;
+  margin-left: 5.8%;
 }
 
 #GoButtonn {
@@ -1252,7 +1371,7 @@ margin-left: 4vh;
   font-size: 20px;
   line-height: 150px;
   color: #548BAB;
-  margin-top: -1vh;
+  margin-top: -1.2vh;
 }
 
 /* ************************************************************************************* */
@@ -1264,7 +1383,7 @@ margin-left: 4vh;
   gap: 16px;
   width: 245px;
   height: 104px;
-  margin-top: 15vh;
+  margin-top: 18vh;
   margin-left: 6.5%;
 }
 
@@ -1378,80 +1497,10 @@ margin-left: 4vh;
 
 
 
-
-
-
-
-
-
-
-/* **************************************************************************************** */
-/* **************************************************************************************** */
-/* **************************************************************************************** */
-/* **************************************************************************************** */
-
-
-
-
-
-
-
-
-
 /****************************************************************************************/
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/****************************************************************************************/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/****************************************************************************************/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/****************************************************************************************/
 .footer {
   background-color: #FFFFFF;
   padding: 20px;
@@ -1460,7 +1509,7 @@ margin-left: 4vh;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  margin-top: 100vh;
+  margin-top: 90vh;
 }
 
 
